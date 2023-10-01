@@ -209,11 +209,19 @@ li {
 /* -+
 next page of index */
 .H1 {
+  cursor: pointer;
   text-align: center;
   font-size: 40px;
   font: bold;
   margin-top: 5;
 }
+
+#ClickBtn{
+  font-size: x-large;
+}
+.H1:hover{
+  color: #ffc400;
+} 
 .Hub {
   margin-top: 10px;
   gap: 15px;
@@ -226,7 +234,7 @@ next page of index */
   border-radius: 10px;
   padding-left: 10px;
   padding-top: 5%;
-  color: #fff;
+  color:#ffc400;
 }
 .button:hover {
   background-color: #000000;

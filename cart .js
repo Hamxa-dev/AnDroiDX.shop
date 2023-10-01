@@ -57,3 +57,6 @@ function deletes(index){
     renderCart()
 }
  
+function  backBtn() {
+    window.location = 'index.html'
+}
