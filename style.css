@@ -1,0 +1,277 @@
+body {
+  background-color: black;
+
+  height: 600px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+#logo {
+  font-size: 50px;
+  padding-right: 60px;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+}
+input {
+  width: 400px;
+  height: 30px;
+  border-radius: 10px;
+  border: none;
+}
+#myInput::placeholder {
+  text-indent: 10px;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+#A {
+  font-size: 40px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.logo a {
+  text-decoration: none;
+  color: #ff8800;
+  font-size: 24px;
+  font-size: 30px;
+}
+.flex {
+  background-color: #333333;
+  display: flex;
+  justify-content: space-evenly;
+  cursor: pointer;
+  padding-top: 15px;
+}
+
+.flex div {
+  flex: 1;
+  text-align: center;
+}
+
+.flex img {
+  max-width: 100%;
+  height: auto;
+}
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  width: 30px;
+  height: 3px;
+  background-color: #fff;
+  margin: 3px 0;
+
+  transition: 0.4s;
+}
+
+.menu {
+  list-style-type: none;
+  display: flex;
+}
+
+h1 {
+  color: #ff8800;
+}
+.heading-center {
+  text-align: center;
+  padding-bottom: 2%;
+  padding-top: 2%;
+  margin-top: 4%;
+}
+
+p {
+  color: #fff;
+}
+button {
+  border-radius: 5px;
+  width: 100px;
+  border: none;
+  background-color: #ff8800;
+  color: #fff;
+}
+
+#add-button:hover {
+  background-color: rgb(255, 184, 78);
+}
+
+.add-button {
+  background: #d48103;
+  border-radius: 30px;
+  width: 110px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  color: #fff;
+}
+
+.add-button:hover {
+  background-color: rgb(255, 184, 78);
+}
+
+.menu li {
+  margin: 0 20px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #ff8800;
+  font-size: 18px;
+  transition: color 0.4s;
+}
+
+/* Media query for responsiveness */
+@media screen and (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+  input {
+    display: none;
+  }
+  .menu-toggle {
+    display: flex;
+  }
+}
+
+/* js,img */
+
+.cart {
+  background: #22201c;
+  border: solid 1px #ff8800;
+  width: 300px;
+  height: 470px;
+  cursor: pointer;
+  margin-top: 2%;
+}
+
+.divs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+h2 {
+  color: #ff8800;
+  text-align: center;
+  font-size: 40px;
+}
+.last-poster {
+  margin-top: 2%;
+  display: flex;
+  justify-content: space-evenly;
+  background: #0a0a09;
+}
+
+/* footer start */
+.footers {
+  margin-top: 2%;
+  padding-top: 3%;
+  background: #22201c;
+  display: flex;
+  justify-content: space-evenly;
+}
+.footer {
+  padding-top: 3%;
+  display: flex;
+  gap: 25px;
+  padding-left: 20%;
+}
+
+li {
+  padding-top: 5%;
+  margin-top: 7px;
+  margin-bottom: 7px;
+  list-style: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* -+
+next page of index */
+.H1 {
+  text-align: center;
+  font-size: 40px;
+  font: bold;
+  margin-top: 5;
+}
+.Hub {
+  margin-top: 10px;
+  gap: 15px;
+  margin: 60px;
+}
+
+
+.button {
+  background: #d48103;
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-top: 5%;
+  color: #fff;
+}
+.button:hover {
+  background-color: #000000;
+}
+
+/* cart.js */
+
+.cart-js {
+  justify-items: center;
+  margin-left: 35%;
+  margin-right: 35%;
+  padding: 20px;
+  border: solid 5px;
+  border-radius: 9px;
+  border-color: #ff9900;
+  box-shadow: #ffc400;
+  margin-top: 20px;
+}
+
+.cartChaild{
+  font: bolder;
+  font-size: large;
+  padding-left: 3%;
+ 
+}
+.cartBtn {
+  background: #ff8800;
+  border-radius: 5%;
+  padding: (20, 20, 20, 20);
+  color: #fff;
+  margin-top: 3%;
+  margin-left: 8%;
+
+}
+
+.cartBtn:hover {
+  background-color: #fdd8a1;
+}
+.spanText{
+  color: #fff;
+  font-size: larger;
+  margin-left: 7%;
+}
+#DeletBtn{
+  margin-top: 2%;
+  margin-left: 19%;
+  margin-left: 35%;
+}
