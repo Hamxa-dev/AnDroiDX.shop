@@ -2,7 +2,7 @@ const data = localStorage.getItem('cartItem');
 const cartArry = JSON.parse(data);
 console.log(cartArry);
 const Hub = document.querySelector('.Hub');
-const p = document.querySelector('.p')
+
 
 
 function renderCart() {
@@ -28,9 +28,7 @@ function renderCart() {
 
 renderCart()
 
-if (cartArry[i].totalcart) {
-    
-}
+
 
 
 function increaseQuantity(index) {
