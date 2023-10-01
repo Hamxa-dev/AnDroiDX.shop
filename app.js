@@ -123,5 +123,5 @@ function goToHome(){
   const cart = JSON.stringify(cartArry);
   localStorage.setItem('cartItem' , cart);
   //console.log('cart zindabad');
-  window.location = '/cart.html';
+  window.location = 'cart.html';
 }
