@@ -2,11 +2,17 @@ const data = localStorage.getItem('cartItem');
 const cartArry = JSON.parse(data);
 console.log(cartArry);
 const Hub = document.querySelector('.Hub');
+const totalPrice = document.querySelector('.totalPrice')
 
 
 
 function renderCart() {
-    for (let i = 0; i < cartArry.length; i++) {
+let totalPrices = 0;
+totalPrice.innerHTML  =''
+if (cartArry.length > 0) {
+ for (let i = 0; i < cartArry.length; i++) {
+        totalPrices += cartArry[i].price * cartArry[i].quantity
+        
         Hub.innerHTML += 
         `<div class="cart-js">
                 <h1 style="margin: 20px;">${cartArry[i].brand}</h1>
@@ -20,11 +26,17 @@ function renderCart() {
                 <span class="spanText">${cartArry[i].quantity}</span>
                 <button class="cartBtn" onclick="decreaseQuantity(${i})">-</button> <br/>
                 <button  class="cartBtn" id="DeletBtn" onclick="deletes(${i})">Delete</button>
-        </div>
-        `
+        </div> `
+        totalPrice.innerHTML =  `TOTAL PRICE: ${totalPrices}`
+              }
+
+
+        }else {
+        totalPrice.innerHTML = '<h1>No item Found</h1>'
+              }
         
-    }
-}
+              }
+
 
 renderCart()
 
@@ -59,4 +71,10 @@ function deletes(index){
  
 function  backBtn() {
     window.location = 'index.html'
+    localStorage.setItem('cartItem' , JSON.stringify(cartArry));
+    
+}
+
+window.onbeforeunload = function() {
+    localStorage.setItem('cartItem' , JSON.stringify(cartArry));
 }

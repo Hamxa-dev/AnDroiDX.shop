@@ -93,7 +93,10 @@ for (let i = 0; i < phones.length; i++) {
   </div>`;
 }
 
-const cartArry = [];
+
+const shopingCartData = localStorage.getItem('cartItem');
+const Data = JSON.parse(shopingCartData);
+const cartArry = [...Data];
 
 function cartAdd(index) {
   if (cartArry.includes(phones[index]) === true) {
