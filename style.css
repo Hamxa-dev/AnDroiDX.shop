@@ -12,6 +12,10 @@ body {
   font-family: Arial, sans-serif;
 }
 
+#li-mt{
+  margin-bottom: 2%;
+}
+
 #logo {
   font-size: 50px;
   padding-right: 60px;
@@ -128,16 +132,22 @@ button {
 .add-button:hover {
   background-color: rgb(255, 184, 78);
 }
-
 .menu li {
-  margin: 0 20px;
+  margin: 0 9px;
 }
+
+.menu a:hover {
+ 
+  color: #ffc400;
+  
+}
+
 
 .menu a {
   text-decoration: none;
   color: #ff8800;
-  font-size: 18px;
-  transition: color 0.4s;
+  font-size: 20px;
+  transition: color 0.40s;
 }
 
 /* Media query for responsiveness */
@@ -206,8 +216,9 @@ li {
   cursor: pointer;
 }
 
-/* -+
-next page of index */
+
+/* next page of index */ 
+
 .H1 {
   cursor: pointer;
   text-align: center;
@@ -283,3 +294,7 @@ next page of index */
   margin-left: 19%;
   margin-left: 35%;
 }
+
+
+
+

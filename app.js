@@ -96,10 +96,22 @@ for (let i = 0; i < phones.length; i++) {
 
 const shopingCartData = localStorage.getItem('cartItem');
 const Data = JSON.parse(shopingCartData);
-const cartArry = [...Data];
+
+
+var cartArry;
+if(Array.isArray(Data)){
+    cartArry = [...Data]
+
+}else{
+    cartArry = []
+}
+
+
 
 function cartAdd(index) {
-  if (cartArry.includes(phones[index]) === true) {
+
+  if(cartArry == phones[index]){
+  // if (cartArry.includes(phones[index]) === true) 
     for (let i = 0; i < cartArry.length; i++) {
       if (cartArry[i] === phones[index]) {
         cartArry[i].quantity += 1;

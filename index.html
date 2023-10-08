@@ -18,19 +18,19 @@
                 <a id="logo">AnDrioDX</span>
                 </a>
             </div>
-            <div><input type="text" id="myInput" placeholder="Search..."><i class="fa-solid fa-magnifying-glass fa-lg"
-                    style="color: #ffffff;"></i></div>
+            <div><input type="text" id="myInput" placeholder="Search..."></div>
             <div class="menu-toggle">
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
             <ul class="menu">
-                <li id="add-buttons"><a href="#">Home</a></li>
-                <li id="add-buttons"><a href="#">about</a></li>
-                <li id="add-buttons"><a href="#">services</a></li>
-                <li id="add-buttons"><a href="#">contact</a></li>
-               <li><button class="add-button" onclick="goToHome()">Shopping cart</button></li>
+                <li id="add-buttons"><a href="#Home">Home</a></li>
+                <li id="add-buttons"><a href="#about">about</a></li>
+                <li id="add-buttons"><a href="#services">services</a></li>
+                <li> <a href="index(login).html"><button class="add-button" onclick="login(event)"> <i class="fa-solid fa-right-to-bracket fa-sm">&nbsp;&nbsp;&nbsp;log in</i></button></a></li>
+            
+               <li><button class="add-button" onclick="goToHome()"> <i class="fa-brands fa-shopify fa-sm">&nbsp;&nbsp; Cart </i>  </button></li> 
             </ul>
         </nav>
     </header>
@@ -55,7 +55,7 @@
             <h4>VIVO</h4>
         </div>
     </div>
-    <h1 class="heading-center">Latest Mobiles</h1>
+    <h1 class="heading-center" id="services">Latest Mobiles</h1>
 
     <!-- js.in get -->
 
@@ -72,7 +72,7 @@
 
     <!-- footer start -->
 
-    <footer>
+    <footer id="about">
         <div class="footers">
             <div>
 
@@ -124,6 +124,7 @@
     </footer>
 
     <script src="app.js"></script>
+    <script src="https://kit.fontawesome.com/ac6c404332.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

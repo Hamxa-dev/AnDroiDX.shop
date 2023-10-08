@@ -6,6 +6,9 @@ const totalPrice = document.querySelector('.totalPrice')
 
 
 
+
+
+
 function renderCart() {
 let totalPrices = 0;
 totalPrice.innerHTML  =''
